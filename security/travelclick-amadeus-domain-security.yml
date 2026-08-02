@@ -1,0 +1,27 @@
+generated: '2026-07-21'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.amadeus-hospitality.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 15 11:06:02 2026 GMT
+  hsts: false
+- host: developer.travelclick.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 10 21:19:37 2026 GMT
+  hsts: null
+domains:
+- domain: amadeus-hospitality.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: reject
+- domain: travelclick.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: reject

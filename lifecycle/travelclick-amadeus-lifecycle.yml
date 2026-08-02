@@ -1,0 +1,21 @@
+generated: '2026-07-21'
+method: searched
+source: https://developer.travelclick.com/documentation
+versioning:
+  scheme: uri-path
+  current: v1
+  product_line: iHotelier Booking Engine 4.0
+  docs: https://developer.travelclick.com/documentation
+deprecation:
+  policy_url: null
+  sunset_header: null
+  note: No public deprecation / Sunset-header policy located.
+sla:
+  url: null
+  uptime_target: null
+status_page: null
+notes: >-
+  The Amadeus iHotelier BE (TravelClick) developer documentation is gated behind
+  portal registration. Versioning is via the URI path (/book/v1/...). No public
+  status page, SLA, or deprecation policy was located on the developer portal or
+  the amadeus-hospitality.com marketing site. Absence recorded, not fabricated.

@@ -1,8 +1,34 @@
 aid: travelclick-amadeus
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/travelclick-amadeus.png
 name: TravelClick (Amadeus)
-description: 'TravelClick (Amadeus) is a company surfaced as a portfolio company of bain-capital-ventures
-  and added to the API Evangelist network as a stub for enrichment. Sector: ai-apps. This profile is a
-  lead awaiting the enrichment pipeline.'
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 5
+  pass: local-v1
+description: >-
+  TravelClick, now Amadeus Hospitality, is a hotel commerce and distribution
+  technology provider whose flagship product is the iHotelier Booking Engine 4.0
+  (CRS/central reservation system). For developers it publishes the Amadeus
+  iHotelier BE API — a family of OAuth 2.0 secured REST APIs that let web and B2C
+  guest-facing applications search availability, hold and create reservations,
+  manage group bookings, and drive the hotel booking flow. TravelClick also
+  operates OTA Connect, a distribution API that connects channel-management
+  partners and OTAs to hotel inventory. API documentation and interactive testing
+  are available to accounts registered on the developer portal at
+  developer.travelclick.com; non-production API keys are issued on request.
 url: https://raw.githubusercontent.com/api-evangelist/travelclick-amadeus/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,11 +38,69 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Ai Apps
-apis: []
+- Hospitality
+- Hotels
+- Travel
+- Booking Engine
+- Reservations
+- Distribution
+- Central Reservation System
+- OAuth2
+apis:
+- name: Amadeus iHotelier BE API
+  description: >-
+    Family of OAuth 2.0 secured REST APIs for the iHotelier Booking Engine 4.0
+    (CRS). Enables B2C / web-client applications to search availability, hold and
+    create reservations (including group reservations), and build guest-facing
+    hotel booking experiences. Endpoints follow a /book/v1/hotel/{hotelCode}/...
+    URI pattern (e.g. POST /book/v1/hotel/{hotelCode}/reservation). Documentation
+    and interactive testing require developer-portal registration.
+  humanURL: https://developer.travelclick.com/documentation
+  baseURL: https://developer.travelclick.com
+  tags:
+  - Hotels
+  - Booking Engine
+  - Reservations
+  properties:
+  - type: DeveloperPortal
+    url: https://developer.travelclick.com
+  - type: Documentation
+    url: https://developer.travelclick.com/documentation
+  - type: GettingStarted
+    url: https://developer.travelclick.com/getstarted
+  - type: Authentication
+    url: authentication/travelclick-amadeus-authentication.yml
+  - type: Conventions
+    url: conventions/travelclick-amadeus-conventions.yml
+  - type: Lifecycle
+    url: lifecycle/travelclick-amadeus-lifecycle.yml
+common:
+- type: DomainSecurity
+  url: security/travelclick-amadeus-domain-security.yml
+- type: Website
+  url: https://www.amadeus-hospitality.com/
+- type: DeveloperPortal
+  url: https://developer.travelclick.com
+- type: Documentation
+  url: https://developer.travelclick.com/documentation
+- type: GettingStarted
+  url: https://developer.travelclick.com/getstarted
+- type: SignUp
+  url: https://developer.travelclick.com/getstarted
+- type: Support
+  url: mailto:api-admin.tc@amadeus.com
+- type: Authentication
+  url: authentication/travelclick-amadeus-authentication.yml
+- type: WellKnown
+  url: well-known/travelclick-amadeus-well-known.yml
+- type: TermsOfService
+  url: https://www.amadeus-hospitality.com/terms-and-conditions/
+- type: PrivacyPolicy
+  url: https://www.amadeus-hospitality.com/privacy-policy/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com

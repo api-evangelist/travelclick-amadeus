@@ -1,0 +1,36 @@
+generated: '2026-07-21'
+method: searched
+source: https://developer.travelclick.com/documentation
+summary: >-
+  Cross-cutting request/response conventions for the Amadeus iHotelier BE
+  (TravelClick) REST APIs, captured from the public developer portal Get Started
+  and API app-notes. The documentation reference itself is gated behind portal
+  registration, so lower-level conventions (pagination, error envelope,
+  idempotency, rate-limit signaling) are not publicly documented and are left
+  null rather than fabricated.
+authentication:
+  style: oauth2-bearer
+  detail: OAuth 2.0 access token required on every request; API key per application.
+  ref: authentication/travelclick-amadeus-authentication.yml
+versioning:
+  scheme: uri-path
+  example: /book/v1/hotel/{hotelCode}/reservation
+  current: v1
+  product_line: iHotelier Booking Engine 4.0
+resource_path_pattern:
+  base_template: /book/v1/hotel/{hotelCode}/...
+  examples:
+    - POST /book/v1/hotel/{hotelCode}/reservation
+    - POST /book/v1/hotel/{hotelCode}/hold-reservation
+media_type: application/json
+idempotency:
+  supported: null
+  note: No idempotency-key contract is documented on the public developer surface.
+pagination:
+  style: null
+  note: Not documented on the public developer surface.
+error_envelope:
+  shape: null
+  note: Not documented on the public developer surface.
+rate_limit_signaling:
+  documented: null

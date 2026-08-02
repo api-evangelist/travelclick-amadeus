@@ -1,0 +1,24 @@
+generated: '2026-07-21'
+method: searched
+source: https://developer.travelclick.com/getstarted
+docs: https://developer.travelclick.com/documentation
+summary:
+  types: [oauth2]
+  oauth2_flows: [clientCredentials]
+  notes: >-
+    The Amadeus iHotelier BE (formerly TravelClick) REST APIs use the OAuth 2.0
+    authorization framework. An OAuth access token must be presented on every API
+    request. A unique API key is issued per application that an organization
+    registers on the developer portal; non-production API keys for interactive
+    testing are requested from api-admin.tc@amadeus.com. No public OpenAPI /
+    security scheme definition is available — the developer documentation is gated
+    behind portal registration — so this profile is captured from the published
+    Get Started guidance rather than derived from a spec.
+schemes:
+  - name: OAuth2
+    type: oauth2
+    flow: clientCredentials
+    token_required_per_request: true
+    api_key_per_application: true
+    non_production_key_contact: api-admin.tc@amadeus.com
+    sources: [https://developer.travelclick.com/getstarted]
