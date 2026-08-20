@@ -49,6 +49,17 @@ tags:
 - Reservations
 - Distribution
 - Central Reservation System
+- Authentication
+tags_raw:
+- Company
+- Ai Apps
+- Hospitality
+- Hotels
+- Travel
+- Booking Engine
+- Reservations
+- Distribution
+- Central Reservation System
 - OAuth2
 apis:
 - name: Amadeus iHotelier BE API
