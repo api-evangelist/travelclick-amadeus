@@ -1,0 +1,26 @@
+generated: '2026-10-14'
+method: searched
+checked:
+- apaleo/integrations/apaleo-integration-edges.yml
+source:
+- apaleo/integrations/apaleo-integration-edges.yml
+edges:
+- partner_name: apaleo (own)
+  partner: apaleo
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://store.apaleo.com/apps/amadeus-ihotelier-booking-engine
+  mirror_of: apaleo/integrations/apaleo-integration-edges.yml
+  apps:
+  - Amadeus iHotelier Booking Engine
+  - Amadeus iHotelier Channel Manager
+  - Amadeus iHotelier CRS
+  listing_count: 3
+  detected: '2026-10-14'
+  detected_by: mirror-platform-listings.py
+  category: Booking engines
